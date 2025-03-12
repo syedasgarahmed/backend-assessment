@@ -39,6 +39,8 @@
             <div id="message" class="mt-4 text-center"></div>
             <div class="mt-4 text-center">
                 <a href="/api/user/login" class="text-blue-500">Login
+                </a>&nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;
+                <a href="/" class="text-blue-500">Home
                 </a>
             </div>
         </div>
@@ -78,7 +80,7 @@
                         } else {
                             $('#message').html(
                                 '<p class="text-red-500">An unexpected error occurred. Please try again.</p>'
-                                );
+                            );
                         }
                     }
                 });

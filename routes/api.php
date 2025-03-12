@@ -20,8 +20,6 @@ use App\Http\Controllers\TimesheetController;
 |
 */
 
-Route::get('/register', [AuthController::class, 'showRegister']);
-Route::post('/register', [AuthController::class, 'register']);
 
 // Admin|User Login Routes
 Route::group(['middleware' => ['web']], function () {
@@ -35,3 +33,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/user/login', [AuthController::class, 'userLogin'])->name('user.login');
     Route::get('/user/dashboard', [UserController::class, 'index'])->name('user.dashboard')->middleware('auth:user');
 });
+
+Route::get('/register', [AuthController::class, 'showRegister']);
+Route::post('/register', [AuthController::class, 'register']);

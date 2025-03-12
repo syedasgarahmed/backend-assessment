@@ -27,8 +27,11 @@
         <div id="error" class="text-red-500 mt-4"></div>
         <div class="mt-4 text-center">
             <a href="/api/register" class="text-blue-500">Signup
+            </a>&nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;
+            <a href="/" class="text-blue-500">Home
             </a>
         </div>
+
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
